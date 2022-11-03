@@ -50,3 +50,25 @@ nav{
   gap: 40px;
   margin-top: 20px;
 }
+
+
+
+.joke-main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+
+.cards-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  /* overflow-x: auto; */
+  margin:10px;
+
+  
+}
