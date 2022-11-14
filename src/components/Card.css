@@ -8,6 +8,7 @@
     padding:10px;
     border-radius: 9px;
     /* margin:10px; */
+    position: relative;
 }
 
 .card--image {
@@ -34,4 +35,14 @@
 /* ADD */
 .card--price {
     margin-top: auto;
+}
+
+.card--badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
 }

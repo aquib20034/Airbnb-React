@@ -24,15 +24,10 @@ function App() {
   //           />
   // })
 
-  const cards = CardsData.map(function(card){
+  const cards = CardsData.map(function(item){
       return <Card 
-      key={card.id}
-      img={card.coverImg}
-      rating={card.stats.rating}
-      reviewCount={card.stats.reviewCount}
-      country={card.country}
-      title={card.title}
-      price={card.price}
+      key={item.id}
+      {...item}
     />
 
   })
@@ -40,11 +35,12 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <div className='cards-list'>
-
-      {cards}
-      </div>
-      {/* <Hero /> */}
+      <Hero />
+      <section className="cards-list">
+                {cards}
+        </section>
+     
+     
       {/* <Card 
         img="katie-zaferes.png"
         rating="5.0"
